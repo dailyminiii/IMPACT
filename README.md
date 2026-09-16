@@ -5,11 +5,18 @@ motion replay with muscle-activity feedback. This repository releases the
 inspectable and reusable system implementation while separating it from the
 IRB-restricted N=12 intervention-study records.
 
-![Released expert-matching architecture](assets/figures/matching-architecture.png)
+![IMPACT system teaser](assets/figures/teaser.png)
 
-*Released expert-matching architecture. The public artifact includes the
-encoder weights, reference databases, deterministic retrieval service, and
-Unity-side replay integration represented in this diagram.*
+*IMPACT supports post-stroke comparison of the learner's replay with the
+automatically retrieved expert motion and EMG reference.*
+
+## System overview
+
+![IMPACT system overview](assets/figures/system-overview.png)
+
+*The released artifact includes the data-acquisition integration, expert-motion
+matching pipeline, EMG processing, real-time HUD, and synchronized replay
+interface shown above.*
 
 ## Included
 
