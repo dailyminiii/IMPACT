@@ -8,7 +8,7 @@ Zenodo.
 The IMPACT system source, automatic expert-matching implementation and weights,
 public expert reference database, apparatus/stimuli specification, and
 dependency-installation instructions are available at
-**https://github.com/dailyminiii/IMPACT_Public**,
+**https://github.com/dailyminiii/IMPACT**,
 archived as version 1.0.0 at **[ZENODO-DOI]**. The intervention-study records
 (motion, EMG, landing, questionnaires, interview, and participant-level
 derivatives), user-study analysis workspace, and qualitative materials are not
@@ -20,7 +20,7 @@ the repository.
 ## Response to the handling editor: availability item
 
 We have deposited the IMPACT implementation in a citable public repository
-(https://github.com/dailyminiii/IMPACT_Public; Zenodo archive [ZENODO-DOI]). The release includes the
+(https://github.com/dailyminiii/IMPACT; Zenodo archive [ZENODO-DOI]). The release includes the
 first-party Unity implementation, AutoEncoder-based expert matching code and
 weights, five-expert public reference/matching data, the apparatus and stimuli
 specification, and reproducible installation instructions for external Unity
