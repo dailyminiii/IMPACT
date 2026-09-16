@@ -31,6 +31,16 @@ The public `Assets/RecordedData/Sample/` motion and `ExpertMVC/` calibration
 files exist solely as a non-study replay demonstration. They contain neither
 N=12 participant records nor participant identifiers.
 
+## Reference dataset
+
+The released five-expert reference and replay databases are derived from the
+public CC0 [MultiSenseBadminton collection](https://doi.org/10.6084/m9.figshare.c.6725706.v1).
+For the dataset documentation, see [Xu et al. (2024)](https://www.nature.com/articles/s41597-024-03144-z).
+This repository includes the processed runtime subset used by the matcher;
+[`reference_data/README.md`](reference_data/README.md) documents its fields,
+provenance, and reconstruction procedure. The IRB-restricted N=12
+intervention-study records are not part of this release.
+
 ## Before opening Unity
 
 The repository intentionally excludes raw third-party Unity assets. Follow
