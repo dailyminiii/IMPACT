@@ -1,4 +1,4 @@
-# IMPACT: Integrated Muscle-Posture AR Feedback for Static-Stance Badminton Practice
+# IMPACT: Integrated Muscle-Posture AR Coaching Tool for Static-Stance Badminton Practice
 
 IMPACT is an augmented-reality system for self-directed static-stance badminton practice with physical racket--shuttle contact. It combines full-body motion capture and upper-limb electromyography (EMG) sensing with expert-reference retrieval, a real-time muscle-activation display, and post-stroke motion--EMG replay.
 
@@ -53,12 +53,7 @@ The restricted materials include participant motion, EMG, shuttle-landing, quest
 
 The public `Assets/RecordedData/Sample/` motion and `ExpertMVC/` calibration files are non-study replay demonstrations. They contain neither participant records nor participant identifiers.
 
-The five-expert reference database is distinct from the 12-participant study and is derived only from the public CC0 MultiSenseBadminton collection. See [`reference_data/README.md`](reference_data/README.md) for details.
-
-Reproducible study-analysis code and the qualitative codebook are available through the accompanying analysis package:
-
-- **Analysis repository:** REPLACE_BEFORE_PUBLIC_RELEASE
-- **Archived release:** REPLACE_BEFORE_PUBLIC_RELEASE
+The five-expert reference database is distinct from the 12-participant study and is derived from the public CC0 [MultiSenseBadminton collection](https://doi.org/10.6084/m9.figshare.c.6725706.v1). See [`reference_data/README.md`](reference_data/README.md) for the released subset, provenance, and reconstruction procedure.
 
 The repository also excludes raw third-party avatar, anatomy, court, racket, font, chart, and device-SDK assets, as well as Unity caches, local paths, credentials, generated outputs, and hardware network settings.
 
