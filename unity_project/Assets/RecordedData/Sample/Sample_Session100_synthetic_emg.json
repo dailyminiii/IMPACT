@@ -1,0 +1,48 @@
+{
+  "data_status": "synthetic public demo EMG; not participant data",
+  "source": "AutoEncoder-selected expert replay Sample_Session100_expert_Sub14.csv",
+  "expert_id": "Sub14",
+  "emg_columns_overwritten": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "motion_rotation_columns_preserved": {
+    "start_column": 16,
+    "end_column_inclusive": 309,
+    "count": 294
+  },
+  "fixed_gains": [
+    0.88,
+    1.04,
+    0.92,
+    1.07,
+    0.84,
+    1.02,
+    0.9,
+    1.06,
+    0.91,
+    1.05,
+    0.87,
+    1.03,
+    0.94,
+    1.0,
+    0.89,
+    1.08
+  ],
+  "raw_amplitude_compensation": 1.4,
+  "normalized_modulation_amplitude": 0.018
+}

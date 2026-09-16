@@ -1,0 +1,6 @@
+# CPU-compatible public reproduction environment. The matcher automatically
+# uses CUDA when an independently installed CUDA-enabled PyTorch build is
+# available; CPU-only PyTorch is sufficient for the released weights.
+numpy==1.26.4
+h5py==3.12.1
+torch==2.5.1

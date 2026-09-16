@@ -1,0 +1,9 @@
+{
+  "stroke": "forehand",
+  "host": "127.0.0.1",
+  "port": 5000,
+  "seed": 2025,
+  "model": "../weights/forehand_transformer_ae.pth",
+  "expert_database": "../../reference_data/expert_reference_database.hdf5",
+  "output_root": "../../matching_outputs"
+}

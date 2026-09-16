@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use IMPACT, please cite this software artifact and the associated paper."
+title: "IMPACT: Integrated Motion-Muscle AR Feedback System"
+type: software
+version: "1.0.0"
+repository-code: "https://github.com/dailyminiii/IMPACT_Public"
+authors:
+  - family-names: "Seong"
+    given-names: "Minwoo"
+  - family-names: "Oh"
+    given-names: "Minwoo"
+  - family-names: "Kang"
+    given-names: "Seongjun"
+  - family-names: "Kang"
+    given-names: "Yumin"
+  - family-names: "Kim"
+    given-names: "Gwangbin"
+  - family-names: "Choi"
+    given-names: "Hyunjin"
+  - family-names: "DelPreto"
+    given-names: "Joseph"
+  - family-names: "Rus"
+    given-names: "Daniela"
+  - family-names: "Kim"
+    given-names: "SeungJun"
+keywords:
+  - augmented reality
+  - electromyography
+  - motion capture
+  - badminton
+  - motor coaching

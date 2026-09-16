@@ -1,0 +1,74 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]serSettings/
+[Bb]uild/
+[Bb]uilds/
+.vs/
+.vscode/
+*.csproj
+*.sln
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+outputs/
+matching_outputs/
+*.log
+
+# Never commit recordings or identifiable study artifacts.  The two explicit
+# exceptions below are public, non-study demo/reference material described in
+# their directory READMEs.
+**/RecordedData_Raw/
+**/RecordedData_Raw.zip
+**/IMPACTData/*.csv
+**/IMPACTData/*.json
+**/IMPACTData/*.txt
+unity_project/Assets/RecordedData/*
+!unity_project/Assets/RecordedData/Sample/
+!unity_project/Assets/RecordedData/Sample/**
+!unity_project/Assets/RecordedData/ExpertMVC/
+!unity_project/Assets/RecordedData/ExpertMVC/**
+
+# Installed locally from the vendor-maintained repository; not redistributed.
+unity_project/Assets/Noitom/
+unity_project/Assets/Chart And Graph/
+unity_project/Assets/Avatar/
+unity_project/Assets/FRIKI_STUDIO/
+unity_project/Assets/badminton court/
+unity_project/Assets/TextMesh Pro/
+**/interview/
+**/transcript*/
+**/*participant*private*
+**/*session*private*
+**/audio/
+**/video/
+*.avi
+*.wav
+*.mp3
+*.mp4
+*.lnk
+
+# Do not add other HDF5 files. The one released public expert reference database
+# is deliberately tracked.
+*.hdf5
+*.h5
+!reference_data/expert_reference_database.hdf5
+!reference_data/expert_replay_database.hdf5
+
+# Analysis and study files must never be committed
+*.jasp
+*.sav
+*.zsav
+*.dta
+*.por
+*.xlsx
+*.xls
+
+# Local authentication/debug scratch files
+.codex-tmp/
