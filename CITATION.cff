@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use IMPACT, please cite this software artifact and the associated paper."
-title: "IMPACT: Integrated Motion-Muscle AR Feedback System"
+title: "IMPACT: An Integrated Muscle-Posture Augmented Reality Coaching Tool for Static-Stance Badminton Practice"
 type: software
 version: "1.0.0"
 repository-code: "https://github.com/dailyminiii/IMPACT"

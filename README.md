@@ -1,4 +1,4 @@
-# IMPACT: Integrated Muscle-Posture AR Coaching Tool for Static-Stance Badminton Practice
+# IMPACT: An Integrated Muscle-Posture Augmented Reality Coaching Tool for Static-Stance Badminton Practice
 
 IMPACT is an augmented-reality system for self-directed static-stance badminton practice with physical racket--shuttle contact. It combines full-body motion capture and upper-limb electromyography (EMG) sensing with expert-reference retrieval, a real-time muscle-activation display, and post-stroke motion--EMG replay.
 
