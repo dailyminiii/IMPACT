@@ -15,8 +15,6 @@ The accompanying exploratory study compares two AR configurations:
 - **Motion-Only:** presents user and expert avatars for motion comparison and post-stroke motion replay.
 - **Motion+Muscle:** adds a real-time EMG-based muscle-activation HUD and post-stroke EMG replay to the Motion-Only configuration.
 
-A No Feedback condition served only as a contextual non-AR comparison in the study. It is not a separate AR interface released in this repository.
-
 ## System overview
 
 ![IMPACT system overview](assets/figures/system-overview.png)
@@ -47,11 +45,9 @@ To use automatic expert matching, start the appropriate local matcher with `tool
 
 ## Data scope
 
-This repository contains the system implementation, matching model and weights, EMG-processing pipeline, public expert-reference data, and setup documentation. It does not contain participant-level records from the 12-participant evaluation because public release was not covered by the study consent and ethics approval.
+This repository contains the system implementation, matching model and weights, EMG-processing pipeline, public expert-reference data, and setup documentation.
 
-The restricted materials include participant motion, EMG, shuttle-landing, questionnaire, interview, audio, video, transcript, session, and participant-linked derived data.
-
-The public `Assets/RecordedData/Sample/` motion and `ExpertMVC/` calibration files are non-study replay demonstrations. They contain neither participant records nor participant identifiers.
+The public `Assets/RecordedData/Sample/` motion and `ExpertMVC/` calibration files are replay demonstrations.
 
 The five-expert reference database is distinct from the 12-participant study and is derived from the public CC0 [MultiSenseBadminton collection](https://doi.org/10.6084/m9.figshare.c.6725706.v1). See [`reference_data/README.md`](reference_data/README.md) for the released subset, provenance, and reconstruction procedure.
 
