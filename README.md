@@ -49,7 +49,7 @@ This repository contains the system implementation, matching model and weights, 
 
 The public `Assets/RecordedData/Sample/` motion and `ExpertMVC/` calibration files are replay demonstrations.
 
-The five-expert reference database is distinct from the 12-participant study and is derived from the public CC0 [MultiSenseBadminton collection](https://doi.org/10.6084/m9.figshare.c.6725706.v1). See [`reference_data/README.md`](reference_data/README.md) for the released subset, provenance, and reconstruction procedure.
+The five-expert reference database is derived from the public CC0 [MultiSenseBadminton collection](https://doi.org/10.6084/m9.figshare.c.6725706.v1). See [`reference_data/README.md`](reference_data/README.md) for the released subset, provenance, and reconstruction procedure.
 
 The repository also excludes raw third-party avatar, anatomy, court, racket, font, chart, and device-SDK assets, as well as Unity caches, local paths, credentials, generated outputs, and hardware network settings.
 
