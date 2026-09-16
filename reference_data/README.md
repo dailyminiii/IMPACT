@@ -19,7 +19,7 @@ video, audio, gaze, pressure, questionnaire, and interview materials.
 
 The database is derived from the public CC0
 [MultiSenseBadminton collection](https://doi.org/10.6084/m9.figshare.c.6725706.v1).
-The source dataset paper is [Xu et al. (2024)](https://www.nature.com/articles/s41597-024-03144-z).
+The source dataset paper is [Seong et al. (2024)](https://www.nature.com/articles/s41597-024-03144-z).
 The derived release is included here to make the matching configuration
 directly inspectable; it is not a replacement for the complete source
 collection.
