@@ -5,6 +5,12 @@ motion replay with muscle-activity feedback. This repository releases the
 inspectable and reusable system implementation while separating it from the
 IRB-restricted N=12 intervention-study records.
 
+![Released expert-matching architecture](assets/figures/matching-architecture.png)
+
+*Released expert-matching architecture. The public artifact includes the
+encoder weights, reference databases, deterministic retrieval service, and
+Unity-side replay integration represented in this diagram.*
+
 ## Included
 
 | Directory | Released material |

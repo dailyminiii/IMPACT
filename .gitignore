@@ -54,6 +54,10 @@ unity_project/Assets/TextMesh Pro/
 *.mp4
 *.lnk
 
+# Paper-resolution figures may include experiment photographs. README uses only
+# explicitly selected, web-optimised diagrams under assets/figures/.
+Figure/
+
 # Do not add other HDF5 files. The one released public expert reference database
 # is deliberately tracked.
 *.hdf5
