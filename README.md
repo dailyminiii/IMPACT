@@ -1,82 +1,60 @@
-# IMPACT research artifact
+# IMPACT: Integrated Muscle-Posture AR Coaching Tool for Static-Stance Badminton Practice
 
-IMPACT is an augmented-reality badminton feedback system that integrates
-motion replay with muscle-activity feedback. This repository releases the
-inspectable and reusable system implementation while separating it from the
-IRB-restricted N=12 intervention-study records.
+IMPACT is an augmented-reality system for self-directed static-stance badminton practice with physical racket--shuttle contact. It combines full-body motion capture and upper-limb electromyography (EMG) sensing with expert-reference retrieval, a real-time muscle-activation display, and post-stroke motion--EMG replay.
+
+During replay, IMPACT compares a player's recorded stroke with a kinematically matched expert reference. The accompanying study examines the bundled Motion+Muscle configuration, which adds EMG-based muscle-activation information to motion guidance through a real-time HUD and synchronized replay.
 
 ![IMPACT system teaser](assets/figures/teaser.png)
 
-*IMPACT supports post-stroke comparison of the learner's replay with the
-automatically retrieved expert motion and EMG reference.*
+*IMPACT records a player's motion and EMG, retrieves a kinematically matched expert reference, and presents motion comparison and muscle-activation information through the AR interface.*
+
+## Feedback configurations in the accompanying study
+
+The accompanying exploratory study compares two AR configurations:
+
+- **Motion-Only:** presents user and expert avatars for motion comparison and post-stroke motion replay.
+- **Motion+Muscle:** adds a real-time EMG-based muscle-activation HUD and post-stroke EMG replay to the Motion-Only configuration.
 
 ## System overview
 
 ![IMPACT system overview](assets/figures/system-overview.png)
 
-*The released artifact includes the data-acquisition integration, expert-motion
-matching pipeline, EMG processing, real-time HUD, and synchronized replay
-interface shown above.*
+*IMPACT connects on-body motion and EMG capture with expert-reference retrieval and an AR interface for real-time muscle-activation display and post-stroke motion--EMG replay.*
 
-## Included
+## Repository contents
 
-| Directory | Released material |
+| Directory | Contents |
 |---|---|
-| `unity_project/` | Sanitised original experimental scene, first-party runtime/feedback source, project settings, and MRTK package references. |
-| `matching/` | AutoEncoder matcher, deterministic retrieval server, tests, configuration, and deployed forehand/backhand weights. |
-| `reference_data/` | Five-expert reference/matching databases and their public-source builders. |
-| `tools/` | Reproducible dependency installation, project preflight, matcher launch, and public-sample preparation tools. |
+| `unity_project/` | Unity scene, first-party runtime and feedback source code, project settings, and MRTK package references. |
+| `matching/` | Stroke-specific autoencoder matcher, deterministic retrieval server, tests, configuration, and deployed forehand-clear and backhand-drive weights. |
+| `reference_data/` | Five-expert reference and matching databases derived from the public MultiSenseBadminton collection, with scripts to build the public-source materials. |
+| `tools/` | Dependency installation, project preflight, matcher-launch, and public-sample preparation tools. |
 
-The public `Assets/RecordedData/Sample/` motion and `ExpertMVC/` calibration
-files exist solely as a non-study replay demonstration. They contain neither
-N=12 participant records nor participant identifiers.
+## Installation and running the system
 
-## Reference dataset
-
-The released five-expert reference and replay databases are derived from the
-public CC0 [MultiSenseBadminton collection](https://doi.org/10.6084/m9.figshare.c.6725706.v1).
-For the dataset documentation, see [Xu et al. (2024)](https://www.nature.com/articles/s41597-024-03144-z).
-This repository includes the processed runtime subset used by the matcher;
-[`reference_data/README.md`](reference_data/README.md) documents its fields,
-provenance, and reconstruction procedure. The IRB-restricted N=12
-intervention-study records are not part of this release.
-
-## Before opening Unity
-
-The repository intentionally excludes raw third-party Unity assets. Follow
-[`unity_project/INSTALL_THIRD_PARTY_DEPENDENCIES.md`](unity_project/INSTALL_THIRD_PARTY_DEPENDENCIES.md), then run:
+The repository excludes raw third-party Unity assets. First follow [the third-party dependency instructions](unity_project/INSTALL_THIRD_PARTY_DEPENDENCIES.md), then run:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\tools\install_noitom_sdk.ps1
 powershell -ExecutionPolicy Bypass -File .\tools\verify_unity_project.ps1
 ```
 
-Open `unity_project/` in Unity **2022.3.62f3**, allow package resolution, and
-then open `Assets/Scenes/IMPACT_Main.unity`. To exercise automatic expert
-matching, start the appropriate local matcher using `tools/start_matcher.ps1`
-before entering Play mode.
+Open `unity_project/` in Unity `2022.3.62f3` and allow package resolution. Then open `Assets/Scenes/IMPACT_Main.unity`.
 
-## Deliberately excluded
+To use automatic expert matching, start the appropriate local matcher with `tools/start_matcher.ps1` before entering Play mode.
 
-- every N=12 intervention-study record, including motion, EMG, landing,
-  questionnaires, surveys, sessions, interview, audio, video, transcript, and
-  participant-level derivative;
-- user-study analysis scripts/JASP projects and qualitative coding materials;
-- raw third-party avatar, anatomy, court/racket, font, chart, and device-SDK
-  assets; and
-- Unity caches, local paths, credentials, generated outputs, and hardware
-  network settings.
+## Data scope
 
-The five-expert reference database is distinct from the N=12 study and is
-derived only from the public CC0 MultiSenseBadminton collection. See
-[`reference_data/README.md`](reference_data/README.md).
+This repository contains the system implementation, matching model and weights, EMG-processing pipeline, public expert-reference data, and setup documentation.
+
+The public `Assets/RecordedData/Sample/` motion and `ExpertMVC/` calibration files are replay demonstrations.
+
+The five-expert reference database is distinct from the 12-participant study and is derived from the public CC0 [MultiSenseBadminton collection](https://doi.org/10.6084/m9.figshare.c.6725706.v1). See [`reference_data/README.md`](reference_data/README.md) for the released subset, provenance, and reconstruction procedure.
+
+The repository also excludes raw third-party avatar, anatomy, court, racket, font, chart, and device-SDK assets, as well as Unity caches, local paths, credentials, generated outputs, and hardware network settings.
 
 ## License and citation
 
-First-party source code and the distributed model weights are under the MIT
-License. Third-party dependencies retain their own licenses and are never
-sub-licensed by this repository; see
-[`THIRD_PARTY_ASSET_AUDIT.md`](THIRD_PARTY_ASSET_AUDIT.md).
+First-party source code and distributed model weights are released under the MIT License. Third-party dependencies retain their original licenses and are not sublicensed by this repository. See [`THIRD_PARTY_ASSET_AUDIT.md`](THIRD_PARTY_ASSET_AUDIT.md).
 
-Use `CITATION.cff` to cite the release. Its repository URL and Zenodo DOI will
-be added when the public `v1.0.0` release is archived.
+See [`CITATION.cff`](CITATION.cff) for citation metadata. The Zenodo DOI for the archived public `v1.0.0` release will be added here after archival.
