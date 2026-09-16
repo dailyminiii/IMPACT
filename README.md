@@ -28,6 +28,7 @@ The accompanying exploratory study compares two AR configurations:
 | `unity_project/` | Unity scene, first-party runtime and feedback source code, project settings, and MRTK package references. |
 | `matching/` | Stroke-specific autoencoder matcher, deterministic retrieval server, tests, configuration, and deployed forehand-clear and backhand-drive weights. |
 | `reference_data/` | Five-expert reference and matching databases derived from the public MultiSenseBadminton collection, with scripts to build the public-source materials. |
+| `qualitative_codebook/` | Participant-data-free qualitative analytic codebook: code definitions and inclusion/exclusion criteria only. |
 | `tools/` | Dependency installation, project preflight, matcher-launch, and public-sample preparation tools. |
 
 ## Installation and running the system
@@ -48,6 +49,8 @@ To use automatic expert matching, start the appropriate local matcher with `tool
 This repository contains the system implementation, matching model and weights, EMG-processing pipeline, public expert-reference data, and setup documentation.
 
 The public `Assets/RecordedData/Sample/` motion and `ExpertMVC/` calibration files are replay demonstrations.
+
+`qualitative_codebook/qualitative_codebook.csv` contains the participant-data-free analytic codebook only; it excludes quotations, participant identifiers, transcript locations, participant-level coding, and support counts.
 
 The five-expert reference database is derived from the public CC0 [MultiSenseBadminton collection](https://doi.org/10.6084/m9.figshare.c.6725706.v1). See [`reference_data/README.md`](reference_data/README.md) for the released subset, provenance, and reconstruction procedure.
 
