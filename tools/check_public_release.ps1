@@ -46,7 +46,6 @@ $requiredProjectPaths = @(
 $requiredReleasePaths = @(
     'reference_data/expert_reference_database.hdf5',
     'reference_data/expert_replay_database.hdf5',
-    'THIRD_PARTY_ASSET_AUDIT.md',
     'unity_project/INSTALL_THIRD_PARTY_DEPENDENCIES.md'
 ) | ForEach-Object { Join-Path $releaseRoot $_ }
 $required = @($requiredProjectPaths + $requiredReleasePaths)

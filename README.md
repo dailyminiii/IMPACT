@@ -55,6 +55,6 @@ The repository also excludes raw third-party avatar, anatomy, court, racket, fon
 
 ## License and citation
 
-First-party source code and distributed model weights are released under the MIT License. Third-party dependencies retain their original licenses and are not sublicensed by this repository. See [`THIRD_PARTY_ASSET_AUDIT.md`](THIRD_PARTY_ASSET_AUDIT.md).
+First-party source code and distributed model weights are released under the MIT License. Third-party dependencies retain their original licenses and are not sublicensed by this repository; their installation is described in [`unity_project/INSTALL_THIRD_PARTY_DEPENDENCIES.md`](unity_project/INSTALL_THIRD_PARTY_DEPENDENCIES.md).
 
 See [`CITATION.cff`](CITATION.cff) for citation metadata. The Zenodo DOI for the archived public `v1.0.0` release will be added here after archival.
